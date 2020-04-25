@@ -1,5 +1,5 @@
 #!/bin/bash
-# ps2client.sh by Dan Peori (danpeori@oopo.net)
+# ps2client.sh by Naomi Peori (naomi@peori.ca)
 # changed to use Git by Mathias Lafeldt <misfire@debugon.org>
 
 ## Download the source code.
@@ -12,4 +12,4 @@ else
 fi
 
 ## Build and install.
-make clean && make && make install && make clean || { exit 1; }
+make --quiet clean && make --quiet && make --quiet install && make --quiet clean || { exit 1; }
